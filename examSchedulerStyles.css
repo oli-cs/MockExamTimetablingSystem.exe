@@ -1,0 +1,47 @@
+*{
+    text-align: center;
+}
+
+#upload{
+    display: block;
+}
+#timetable{
+    display: none;
+}
+
+.subject{
+    font-weight: bold;
+    padding: 1em;
+}
+
+.blankrow{
+    border: 0px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 1em;
+}
+th{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.examslot{
+    padding: 1em;
+}
+
+.greenBackground{
+    background-color: green;
+    color: white
+}
+
+.redBackground{
+    background-color: red;
+    color: white;
+}

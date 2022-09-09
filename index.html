@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--!testing buttons have been removed-->
+<html>
+
+    <head>
+        <title>
+            Mock Exam Timetabling System
+        </title>
+
+        <link rel="stylesheet" href="examSchedulerStyles.css" type="text/css">
+        <script src="examSchedulerUI.js"></script>
+    </head>
+
+    <body>
+
+        <h1>Mock Exam Timetabling System</h1>
+        <div id=upload>
+            <p>
+                <h3><u>Please upload your file in <b>.csv</b> format.</u></h3> 
+                If you have another file format(eg .xlsx) you will have to export the file as .csv file.
+            </p>
+            <div>
+                <form id="uploadForm" enctype="multipart/form-data" method="post">
+                    <p>File: <input type="file" name="filename" accept=".csv" required/></p>
+                    <p>Mock exam series start Date: <input type="date" name="startDate" required/></p>
+                    <p>Length of mock series in whole days: <input type="number" name="mockExamSeriesLengthInDays" value="5" required></p>
+                    <p><input id="submitForm" type="submit" value="Upload" /></p>
+                    
+                </form>
+            </div>
+        </div>
+
+        <p id="output"></p>
+        <p id="error"></p>
+        <div id="timetable">
+            <p id="utils">Show Clashes<input id="showClashesChk" type="checkbox" onclick="toggleClashes()" Checked/>
+                <button onclick="printTimetable()">Print</button></p>
+            <div id="printable">
+                <table>
+                    <thead id="days">
+                        <tr id="headings">
+                                            
+                        </tr>
+                    </thead>
+                    <tr id="AMRow">
+                    
+                    </tr>
+                    <tr id="PMRow">
+                    
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <p>Mock Exam Timetabling System v1 ~ Oli Sharp, Oct 2021</p>
+    </footer>
+    
+
+</html>
