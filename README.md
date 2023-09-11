@@ -1,4 +1,4 @@
 # MockExamTimetablingSystem.exe
- executable version of the MockExamTimetablingSystem repo
+ executable app for timetabling mock exams
  all files are required to be in the same directory
- requires Windows 10 or higher and google chrome to be installed
+ requires Windows 10 or higher and google chrome to be installed at the default path
